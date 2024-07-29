@@ -5,7 +5,8 @@ import java.util.Scanner;
 
 public class ManageStudents {
     static Scanner scanner = new Scanner(System.in);
-    public static void main(String[] args){
+
+    public static void main(String[] args) {
 //        ArrayList<Student> students = new ArrayList<>();
 //        System.out.print("Hay nhap so luong sinh vien: ");
 //        int number = scanner.nextInt();
@@ -27,13 +28,13 @@ public class ManageStudents {
         int number = scanner.nextInt();
         Student[] students = new Student[number];
 
-        for(int i = 0; i<number; i++){
-            System.out.printf("Nhap thong tin hoc sinh thu %d:\n", i+1);
+        for (int i = 0; i < number; i++) {
+            System.out.printf("Nhap thong tin hoc sinh thu %d:\n", i + 1);
             students[i] = new Student();
             students[i].input();
         }
         System.out.println("\n---Thong tin hoc sinh---");
-        for(int i = 0; i<number; i++) {
+        for (int i = 0; i < number; i++) {
             students[i].output();
             System.out.println();
         }

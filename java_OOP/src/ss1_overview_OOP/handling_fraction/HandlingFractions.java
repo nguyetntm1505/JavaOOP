@@ -1,9 +1,11 @@
 package ss1_overview_OOP.handling_fraction;
+
 import java.util.Scanner;
 
 public class HandlingFractions {
     static Scanner scanner = new Scanner(System.in);
-    public static void main(String[] args){
+
+    public static void main(String[] args) {
         Fraction a = new Fraction();
         Fraction b = new Fraction();
         System.out.println("Nhap phan so thu nhat: ");
@@ -28,9 +30,9 @@ public class HandlingFractions {
         tich.output();
 
         System.out.print("Thuong cua 2 phan so la: ");
-        if(b.tuSo == 0){
+        if (b.tuSo == 0) {
             System.out.println("Khong the thuc hien phep tinh nay!!");
-        }else {
+        } else {
             Fraction thuong = a.thuong(b);
             thuong.output();
         }

@@ -1,4 +1,4 @@
-package ss2_constructor_fraction;
+package ss2_constructor.fraction;
 
 public class Fraction {
     private int tuSo;
@@ -44,12 +44,21 @@ public class Fraction {
     }
 
     private void rutGon() {
-        int ucln = uocChungLonNhat(tuSo,mauSo);
+        int ucln = uocChungLonNhat(tuSo, mauSo);
         tuSo = tuSo / ucln;
         mauSo = mauSo / ucln;
         if (mauSo < 0) {
             tuSo = -tuSo;
             mauSo = -mauSo;
         }
+    }
+
+    public Fraction copy() {
+        return new Fraction(tuSo, mauSo);
+    }
+
+    public void cong(int value) {
+        tuSo = tuSo + value * mauSo;
+        rutGon();
     }
 }

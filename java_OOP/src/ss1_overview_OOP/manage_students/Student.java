@@ -7,7 +7,7 @@ public class Student {
     double mathScore;
     double literatureScore;
 
-    void input(){
+    void input() {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Hay nhap ten hoc sinh: ");
         name = scanner.nextLine();
@@ -17,15 +17,15 @@ public class Student {
         literatureScore = Double.parseDouble(scanner.nextLine());
     }
 
-    void output(){
+    void output() {
         System.out.println("Ten cua hoc sinh: " + name);
         System.out.println("Diem toan: " + mathScore);
         System.out.println("Diem van: " + literatureScore);
         System.out.println("Diem trung binh: " + calculateAverageScore());
     }
 
-    double calculateAverageScore(){
-        double average = (mathScore + literatureScore)/2;
+    double calculateAverageScore() {
+        double average = (mathScore + literatureScore) / 2;
         return average;
     }
 }

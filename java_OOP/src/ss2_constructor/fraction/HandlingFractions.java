@@ -1,4 +1,4 @@
-package ss2_constructor_fraction;
+package ss2_constructor.fraction;
 
 public class HandlingFractions {
     public static void main(String[] args) {
@@ -12,5 +12,8 @@ public class HandlingFractions {
         d.output();
         Fraction e = new Fraction(3, -1);
         e.output();
+        Fraction f = e.copy();
+        f.cong(100);
+        f.output();
     }
 }

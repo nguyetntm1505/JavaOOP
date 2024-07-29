@@ -21,20 +21,23 @@ public class Phone {
         this.productor = productor;
     }
 
-    public void setId(String id){
+    public void setId(String id) {
         this.id = id;
     }
 
-    public String getId(){
+    public String getId() {
         return id;
     }
-    public int getPrice(){
+
+    public int getPrice() {
         return price;
     }
-    public String getName(){
+
+    public String getName() {
         return name;
     }
-    public String getProductor(){
+
+    public String getProductor() {
         return productor;
     }
 

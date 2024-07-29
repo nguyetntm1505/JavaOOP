@@ -55,33 +55,33 @@ public class Fraction {
         return ketQua;
     }
 
-    Fraction minus(Fraction phanSoKhac){
+    Fraction minus(Fraction phanSoKhac) {
         Fraction ketQua = new Fraction();
         ketQua.tuSo = this.tuSo * phanSoKhac.mauSo - phanSoKhac.tuSo * this.mauSo;
         ketQua.mauSo = this.mauSo * phanSoKhac.mauSo;
         return ketQua;
     }
 
-    Fraction tich(Fraction phanSoKhac){
+    Fraction tich(Fraction phanSoKhac) {
         Fraction ketQua = new Fraction();
         ketQua.tuSo = this.tuSo * phanSoKhac.tuSo;
         ketQua.mauSo = this.mauSo * phanSoKhac.mauSo;
         return ketQua;
     }
 
-    Fraction thuong(Fraction phanSoKhac){
+    Fraction thuong(Fraction phanSoKhac) {
         Fraction ketQua = new Fraction();
         ketQua.tuSo = this.tuSo * phanSoKhac.mauSo;
         ketQua.mauSo = this.mauSo * phanSoKhac.tuSo;
         return ketQua;
     }
 
-    void kiemTraPhanSo(){
-        if(tuSo > 0){
+    void kiemTraPhanSo() {
+        if (tuSo > 0) {
             System.out.println("Phan so nay la phan so duong");
-        }else if(tuSo == 0){
+        } else if (tuSo == 0) {
             System.out.println("Phan so nay la phan so bang 0");
-        }else{
+        } else {
             System.out.println("Phan so nay la phan so am");
         }
     }
